@@ -24,7 +24,6 @@ public:
 	string tostring();
 	string post();
 	string get();
-	int getid();
 };
 
 #endif // USER_H

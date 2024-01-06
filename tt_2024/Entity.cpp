@@ -14,6 +14,10 @@ string Entity::get() {
 	return string();
 }
 
+int Entity::getid() {
+	return id;
+}
+
 string Entity::tostring() {
 	return string();
 }

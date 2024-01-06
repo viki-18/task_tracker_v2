@@ -20,14 +20,14 @@ string Tasktracker::post() {
 	return "INSERT INTO " + table + " " + attributes + " VALUES " + tostring();
 }
 
-string Tasktracker::getall() {
-	return "SELECT * FROM " + linked_table + " WHERE ttid = " + to_string(id);
+string Tasktracker::get(int userid) {
+	return "SELECT * FROM " + table + " WHERE uid = " + to_string(userid);
 }
 
-string Tasktracker::getbydd() {
-	return "SELECT * FROM " + linked_table + " WHERE ttid = " + to_string(id) + " ORDER BY deadline";
+string Tasktracker::getall(int TTid) {
+	return "SELECT * FROM " + linked_table + " WHERE ttid = " + to_string(TTid);
 }
 
-int Tasktracker::getid() {
-	return id;
+string Tasktracker::getbydd(int TTid) {
+	return "SELECT * FROM " + linked_table + " WHERE ttid = " + to_string(TTid) + " ORDER BY deadline";
 }

@@ -24,9 +24,9 @@ public:
 
 	string tostring();
 	string post();
-	string getall();
-	string getbydd();
-	int getid();
+	string get(int userid);
+	string getall(int TTid);
+	string getbydd(int TTid);
 };
 
 #endif // TASKTRACKER_H

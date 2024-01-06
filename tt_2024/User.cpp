@@ -23,7 +23,3 @@ string User::get() {
 string User::tostring() {
 	return "(\"" + username + "\", \"" + password + "\")";
 }
-
-int User::getid() {
-	return id;
-}

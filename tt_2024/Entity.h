@@ -18,6 +18,7 @@ public:
 
 	string post();
 	string get();
+	int getid();
 	string tostring();
 };
 
